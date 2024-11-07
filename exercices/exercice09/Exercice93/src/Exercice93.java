@@ -8,8 +8,8 @@ public class Exercice93 {
         int total = 0;
         int moyenne;
         for (int i = 0; i < TbAléatoire.length; i++) {
-            if (TbAléatoire[i] > 0) {
-                total = TbAléatoire[i] + TbAléatoire[i - 1];
+            int Aide = TbAléatoire[i] + TbAléatoire[i - 1];
+            total + Aide;
             }
             System.out.println(TbAléatoire[i]);
 
@@ -17,4 +17,3 @@ public class Exercice93 {
         moyenne = total / TbAléatoire.length;
         System.out.println("La moyenne des notes de la classe est : " + moyenne);
     }
-}
