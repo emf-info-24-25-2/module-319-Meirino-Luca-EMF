@@ -1,5 +1,20 @@
 public class Exercice93 {
     public static void main(String[] args) throws Exception {
-    Math.
+        int[] TbAléatoire = new int[10];
+        for (int i = 0; i < TbAléatoire.length; i++) {
+            TbAléatoire[i] = 1 + (int) (Math.random() * ((6 - 1) + 1));
+            System.out.println(TbAléatoire[i]);
+        }
+        int total = 0;
+        int moyenne;
+        for (int i = 0; i < TbAléatoire.length; i++) {
+            if (TbAléatoire[i] > 0) {
+                total = TbAléatoire[i] + TbAléatoire[i - 1];
+            }
+            System.out.println(TbAléatoire[i]);
+
+        }
+        moyenne = total / TbAléatoire.length;
+        System.out.println("La moyenne des notes de la classe est : " + moyenne);
     }
 }
