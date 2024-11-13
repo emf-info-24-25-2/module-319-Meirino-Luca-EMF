@@ -10,8 +10,10 @@ public class Devoir05 {
         // On continue à utiliser le scanner dans le programme…
 
         int nbcible = valeur;
+        //RIF: vous pourriez aussi choisir aléatoirement le nombre cible
         System.out.println("ok!");
 
+        //RIF: les deux lignes suivantes: vous demandez une valeur mais vous ne vérifiez pas si elle est bonne, vous en redemandez directement une dans la boucle!
          System.out.print("Entrez une valeur de votre choix svp : ");
          int valeur2 = scanner.nextInt();
 
@@ -24,6 +26,7 @@ public class Devoir05 {
             } else if (valeur2 > nbcible){
                 System.out.println("trop grand!");
             }else {
+                //RIF: pensez aussi à compter le nombre de tentatives
                 System.out.println("Bien joué ! tu as trouvé la valeur!");
             }
         }
