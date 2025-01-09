@@ -9,7 +9,6 @@ public class App {
     }
 
     public static int[] genererValeursAleatoires(int nbrGenerer, int nbrMinimum, int nbrMaximum) {
-
         int[] TableauAleatoire = new int[nbrGenerer];
         int NbrAleatoire;
 
@@ -21,15 +20,15 @@ public class App {
     }
 
     public static int positionValeur(int[] tableauEntier, int valeurATrouver) {
-        int nonPresent;
+        int nonPresent = -1; // Initialisation à -1
+
         for (int o = 0; o < tableauEntier.length; o++) {
             if (tableauEntier[o] == valeurATrouver) {
-                return o;
-            } else {
-                continue;
+                return o; // Retourne la position si la valeur est trouvée
             }
-            nonPresent = -1;
-            return nonPresent;
         }
+
+        // Retourne -1 si la valeur n'est pas trouvée
+        return nonPresent;
     }
 }
